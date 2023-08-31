@@ -1,3 +1,5 @@
+/* this is js for a analog clock */
+
 function setClock() {
     const hourHand = document.getElementById("hourHand");
     const minuteHand = document.getElementById("minuteHand");
