@@ -4,7 +4,7 @@ function setClock() {
     const secondHand = document.getElementById("secondHand");
 
     const currentDate = new Date();
-    console.log(currentDate)
+    // console.log(currentDate)
     const secondsRatio = currentDate.getSeconds() / 60;
     const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
     const hoursRatio = (minutesRatio + currentDate.getHours()) / 12;
