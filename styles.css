@@ -1,0 +1,73 @@
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 50%;
+    margin: 50px; /* added for spacing around the clock */
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transform: rotate(90deg);
+    z-index: 1;
+}
+
+.second {
+    background: red;
+    height: 48%;
+    width: 2px;
+}
+
+.minute {
+    background: black;
+    height: 45%;
+    width: 4px;
+}
+
+.hour {
+    background: black;
+    height: 30%;
+    width: 6px;
+}
+
+.center {
+    background: black;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.number {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 0;
+    transform: translate(-50%, -50%); /* Centering the number */
+}
+
+.clock .number[data-number="1"]  { top: 15%; left: 85%; }
+.clock .number[data-number="2"]  { top: 25%; left: 92%; }
+.clock .number[data-number="3"]  { top: 50%; left: 90%; }
+.clock .number[data-number="4"]  { top: 75%; left: 92%; }
+.clock .number[data-number="5"]  { top: 85%; left: 85%; }
+.clock .number[data-number="6"]  { bottom: -5%; left: 50%; }
+.clock .number[data-number="7"]  { bottom: 15%; left: 15%; }
+.clock .number[data-number="8"]  { bottom: 25%; left: 8%; }
+.clock .number[data-number="9"]  { top: 50%; left: 10%; }
+.clock .number[data-number="10"] { top: 25%; left: 17%; }
+.clock .number[data-number="11"] { top: 15%; left: 30%; }
+.clock .number[data-number="12"] { top: 10%; left: 50%; }
